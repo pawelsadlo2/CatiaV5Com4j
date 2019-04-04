@@ -1,0 +1,2 @@
+java -jar tlbimp.jar -o CATIA -p part.wsh "C:\Program Files\Dassault Systemes\B21\win_b64\code\bin\PartTypeLib.tlb"
+java -jar tlbimp.jar -o CATIA -p shape "C:\Program Files\Dassault Systemes\B21\win_b64\code\bin\CATGitTypeLib.tlb"
