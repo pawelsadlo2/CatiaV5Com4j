@@ -17,14 +17,15 @@ def getCatiaApp(): Application = {
       catia.visible(true)
       catia
     }
-
   }
 }
 
 val catiaApp = getCatiaApp
-val documents = catiaApp.documents()
+/*val documents = catiaApp.documents()
 val documentsList: List[Document] =
   JavaConverters.asScalaIterator(documents.iterator)
-    .toList.map(_.queryInterface(classOf[Document]))
+    .toList.map(_.queryInterface(classOf[Document]))*/
+java.util.ResourceBundle.clearCache()
+catiaApp.activeDocument().selection().parent()
 
-documents.add(new Holder("Product"))
+//documents.add(new Holder("Product"))

@@ -4,7 +4,7 @@
 		module="catiav5com4j$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190404223540"
+		publication="20190405091542"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

@@ -1,16 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\pawel\Desktop\CatiaV5Com4j\src\main\java\CatiaV5TypeLibs\InfItfTypeLib\ClassFactory.java:10:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   class IFontDisp[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class ClassFactory[0m
-[0m[[0m[31merror[0m] [0m[0m  public static IFontDisp createStdFont() {[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\pawel\Desktop\CatiaV5Com4j\src\main\java\CatiaV5TypeLibs\InfItfTypeLib\ClassFactory.java:14:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   class IPictureDisp[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class ClassFactory[0m
-[0m[[0m[31merror[0m] [0m[0m  public static IPictureDisp createStdPicture() {[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\pawel\Desktop\CatiaV5Com4j\src\main\java\CatiaV5TypeLibs\InfItfTypeLib\ClassFactory.java:11:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   class IFontDisp[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class ClassFactory[0m
-[0m[[0m[31merror[0m] [0m[0m    return COM4J.createInstance( IFontDisp.class, "{0BE35203-8F91-11CE-9DE3-00AA004BB851}" );[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\pawel\Desktop\CatiaV5Com4j\src\main\java\CatiaV5TypeLibs\InfItfTypeLib\ClassFactory.java:15:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   class IPictureDisp[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class ClassFactory[0m
-[0m[[0m[31merror[0m] [0m[0m    return COM4J.createInstance( IPictureDisp.class, "{0BE35204-8F91-11CE-9DE3-00AA004BB851}" );[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\starter.scala:8:8: starter has a main method with parameter type Array[String], but starter will not be a runnable program.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Reason: main method must have exact signature (Array[String])Unit[0m
+[0m[[0m[33mwarn[0m] [0m[0mobject starter {[0m
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

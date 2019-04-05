@@ -20,7 +20,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.8 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.8 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.8 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.jvnet.com4j#com4j;2.1 {compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.jvnet.com4j#com4j;2.1 {compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\pawel\.ivy2\local\org.jvnet.com4j\com4j\2.1\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\psadlo\.ivy2\local\org.jvnet.com4j\com4j\2.1\ivys\ivy.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.jvnet.com4j#com4j;2.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.pom[0m
 [0m[[0m[0mdebug[0m] [0m[0m	public: found md file for org.jvnet.com4j#com4j;2.1[0m
@@ -29,10 +29,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.pom[0m
 [0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.pom.sha1[0m
 [0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] org.jvnet.com4j#com4j;2.1!com4j.pom(pom.original) (406ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] org.jvnet.com4j#com4j;2.1!com4j.pom(pom.original) (260ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.jvnet.com4j#com4j-parent;2.1 {}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.jvnet.com4j#com4j-parent;2.1 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\pawel\.ivy2\local\org.jvnet.com4j\com4j-parent\2.1\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\psadlo\.ivy2\local\org.jvnet.com4j\com4j-parent\2.1\ivys\ivy.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.jvnet.com4j#com4j-parent;2.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.pom[0m
 [0m[[0m[0mdebug[0m] [0m[0m	public: found md file for org.jvnet.com4j#com4j-parent;2.1[0m
@@ -41,15 +41,15 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.pom[0m
 [0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.pom.sha1[0m
 [0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] org.jvnet.com4j#com4j-parent;2.1!com4j-parent.pom(pom.original) (315ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] org.jvnet.com4j#com4j-parent;2.1!com4j-parent.pom(pom.original) (180ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.kohsuke#pom;6 {}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.kohsuke#pom;6[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\pawel\.ivy2\local\org.jvnet.com4j\com4j-parent\2.1\jars\com4j-parent.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\psadlo\.ivy2\local\org.jvnet.com4j\com4j-parent\2.1\jars\com4j-parent.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR:  url=https://repo1.maven.org/maven2/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\pawel\.sbt\preloaded\org.jvnet.com4j\com4j-parent\2.1\jars\com4j-parent.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/pawel/.sbt/preloaded/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\pawel\.ivy2\local\org.jvnet.com4j\com4j\2.1\jars\com4j.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\psadlo\.sbt\preloaded\org.jvnet.com4j\com4j-parent\2.1\jars\com4j-parent.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/psadlo/.sbt/preloaded/org/jvnet/com4j/com4j-parent/2.1/com4j-parent-2.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\psadlo\.ivy2\local\org.jvnet.com4j\com4j\2.1\jars\com4j.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.jvnet.com4j#com4j;2.1 in public[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#catiav5com4j_2.12;0.1->org.jvnet.com4j#com4j;2.1 [compile->runtime][0m
@@ -351,27 +351,27 @@
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
 [0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar[0m
 [0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.jar.sha1[0m
 [0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/org/jvnet/com4j/com4j/2.1/com4j-2.1.jar[0m
-[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.jvnet.com4j#com4j;2.1!com4j.jar (899ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 4052ms :: artifacts dl 901ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 compile produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 runtime produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 test produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 provided produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 optional produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 compile-internal produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 runtime-internal produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 test-internal produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 plugin produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 pom produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 scala-tool produced in C:\Users\pawel\Desktop\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (4052ms resolve - 901ms download)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.jvnet.com4j#com4j;2.1!com4j.jar (420ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 1340ms :: artifacts dl 420ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 compile produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 runtime produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 test produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 provided produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 optional produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 compile-internal produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 runtime-internal produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 test-internal produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 plugin produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 pom produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#catiav5com4j_2.12;0.1 scala-tool produced in C:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\target\scala-2.12\resolution-cache\reports\default-catiav5com4j_2.12-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (1340ms resolve - 420ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m

@@ -4,7 +4,7 @@
 		module="catiav5com4j-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190404213540"
+		publication="20190405091536"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

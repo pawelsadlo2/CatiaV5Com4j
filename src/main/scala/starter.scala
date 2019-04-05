@@ -1,18 +1,23 @@
 import CatiaV5TypeLibs.InfItfTypeLib._
 import com4j._
+import com4jExtensions._
 
 import scala.util.{Failure, Success, Try}
 
 object starter {
-  def main(args: Array[String]) = {
+  def main(args: Array[String]): Unit = {
 
 
     val catiaApp = getCatiaApp
-    val documents = catiaApp.windows()
-
-    documents.iterator().next().queryInterface(classOf[Window]).caption()
-
-
+    /*val documents = catiaApp.documents()
+    val documentsList: List[Document] =
+      JavaConverters.asScalaIterator(documents.iterator)
+        .toList.map(_.queryInterface(classOf[Document]))*/
+    //.util.ResourceBundle.clearCache()
+    val selection: Selection = catiaApp.activeDocument().selection().queryInterface(classOf[Selection])
+    val asMap = new asMap(selection)
+    val mapped = asMap.toMap()
+    val x =2
   }
 
   def getCatiaApp(): Application = {
@@ -23,7 +28,11 @@ object starter {
 
     excelAppTry match {
       case Success(value) => value
-      case Failure(_) => ClassFactory.createApplication()
+      case Failure(_) => {
+        val catia = ClassFactory.createApplication()
+        catia.visible(true)
+        catia
+      }
 
     }
   }
