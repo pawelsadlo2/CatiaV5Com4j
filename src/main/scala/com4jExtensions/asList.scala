@@ -3,19 +3,24 @@ package com4jExtensions
 import CatiaV5TypeLibs.InfItfTypeLib._
 import com4j._
 
-class asMap(val inSel: Selection) {
+import scala.collection.JavaConverters
 
-  def toMap(): List[Com4jObject] = {
-    val count:Int = inSel.count2()
+class asList[T <: Com4jObject](val inObj: T) {
 
-    def toMapIter(iter: Int): List[Com4jObject] = {
-      if (iter > count) Nil
-      else List(inSel.item(iter)) ++ toMapIter(iter + 1)
+  def convertToList: List[Com4jObject] = {
+    inObj match {
+      case sel: Selection => {
+        val count = sel.count()
+        toListOneByOne(sel, 1, count)
+      }
+      case iterable: Collection => JavaConverters.asScalaIterator(iterable.iterator).toList
     }
 
-    toMapIter(1)
+    def toListOneByOne[T <: Selection](inObj: T, iter: Int, count: Int): List[Com4jObject] = {
+      if (iter > count) List()
+      else List(inObj.item(iter)) ++ toListOneByOne(inObj, iter + 1, count)
+    }
+
   }
 
 }
-
-

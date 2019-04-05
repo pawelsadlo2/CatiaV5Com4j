@@ -1,5 +1,10 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\starter.scala:8:8: starter has a main method with parameter type Array[String], but starter will not be a runnable program.[0m
-[0m[[0m[33mwarn[0m] [0m[0m  Reason: main method must have exact signature (Array[String])Unit[0m
-[0m[[0m[33mwarn[0m] [0m[0mobject starter {[0m
-[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\com4jExtensions\asList.scala:23:3: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: List[com4j.Com4jObject][0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\starter.scala:23:37: a pure expression does nothing in statement position; multiline expressions might require enclosing parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def getCatiaApp(): Application = {3[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

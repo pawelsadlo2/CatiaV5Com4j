@@ -15,12 +15,12 @@ object starter {
         .toList.map(_.queryInterface(classOf[Document]))*/
     //.util.ResourceBundle.clearCache()
     val selection: Selection = catiaApp.activeDocument().selection().queryInterface(classOf[Selection])
-    val asMap = new asMap(selection)
-    val mapped = asMap.toMap()
+    val asMap = new asList(selection)
+    val mapped = asMap.convertToList
     val x =2
   }
 
-  def getCatiaApp(): Application = {
+  def getCatiaApp(): Application = {3
 
     val excelAppTry = Try(COM4J.getActiveObject(
       classOf[Application],
