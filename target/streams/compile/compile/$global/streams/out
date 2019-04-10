@@ -1,10 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\com4jExtensions\asList.scala:23:3: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
-[0m[[0m[31merror[0m] [0m[0m required: List[com4j.Com4jObject][0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\starter.scala:23:37: a pure expression does nothing in statement position; multiline expressions might require enclosing parentheses[0m
-[0m[[0m[33mwarn[0m] [0m[0m  def getCatiaApp(): Application = {3[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\starter.scala:13:14: inferred type arguments [com4j.ROT] do not conform to class asList's type parameter bounds [T <: com4j.Com4jObject][0m
+[0m[[0m[31merror[0m] [0m[0m    val ROT =new asList(COM4J.getROT).convertToList[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\psadlo\Desktop\CatiaV5Projects\CatiaV5Com4j\src\main\scala\starter.scala:13:31: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : com4j.ROT[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m    val ROT =new asList(COM4J.getROT).convertToList[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
