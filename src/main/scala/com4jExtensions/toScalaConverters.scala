@@ -7,9 +7,6 @@ import com4j._
 
 import scala.collection.JavaConverters
 
-/*trait selectionConverter extends toScalaConverters[Selection] {
-  def x = 1
-}*/
 
 trait itemable {
 
@@ -53,16 +50,7 @@ class toScalaConverters[T /*<: Com4jObject*/ ](inObj: T) {
 
   }
 
-  //    val inSel = inObj.queryInterface(classOf[Selection])
-  //    val count = inSel.count()
 
-  //    def toListOneByOne(iter: Int, listIter: List[Com4jObject]): List[Com4jObject] = {
-  //      if (iter > count) listIter
-  //      else toListOneByOne(iter + 1, listIter ++ List(inSel.item(iter).value()))
-  //    }
-  //
-  //    toListOneByOne(1, List())
-  //  }
 
   def iterableToList(obj: Collection): List[Com4jObject] = {
     val inObjIterable = obj.queryInterface(classOf[Collection]).iterator()
