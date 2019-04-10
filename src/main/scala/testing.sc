@@ -1,7 +1,7 @@
 import CatiaV5TypeLibs.InfItfTypeLib._
 import com4j._
+import com4jExtensions._
 
-import scala.collection.JavaConverters
 import scala.util.{Failure, Success, Try}
 
 def getCatiaApp(): Application = {
@@ -21,11 +21,14 @@ def getCatiaApp(): Application = {
 }
 
 val catiaApp = getCatiaApp
+val windows = catiaApp.windows().queryInterface(classOf[Windows])
+val x = new toScalaConverters(windows)
+  //.iterableToList()
+//catiaApp.asInstanceOf[toScalaConverters].x
 /*val documents = catiaApp.documents()
 val documentsList: List[Document] =
   JavaConverters.asScalaIterator(documents.iterator)
     .toList.map(_.queryInterface(classOf[Document]))*/
-java.util.ResourceBundle.clearCache()
-catiaApp.activeDocument().selection().parent()
+//catiaApp.activeDocument().selection().parent()
 
 //documents.add(new Holder("Product"))

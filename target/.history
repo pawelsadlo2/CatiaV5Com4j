@@ -1,5 +1,0 @@
-run
-;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/pawel/AppData/Local/Temp/sbt-structure.xml; session clear-all
-all {file:/C:/Users/pawel/Desktop/CatiaV5Com4j/}catiav5com4j/products {file:/C:/Users/pawel/Desktop/CatiaV5Com4j/}catiav5com4j/test:products
-;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/pawel/AppData/Local/Temp/sbt-structure.xml; session clear-all
-run
