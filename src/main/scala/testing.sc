@@ -44,6 +44,6 @@ val x = new toScalaConverters(windows)
   //.iterableToList()
 //catiaApp.asInstanceOf[toScalaConverters].x
 /*val documents = catiaApp.documents()
-val documentsList: List[Document] =
+val documentsList: CatiaV5TypeLibs.PartItfTypeLib.List[Document] =
   JavaConverters.asScalaIterator(documents.iterator)
     .toList.map(_.queryInterface(classOf[Document]))*/

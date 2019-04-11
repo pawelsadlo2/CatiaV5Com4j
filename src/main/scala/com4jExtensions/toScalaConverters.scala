@@ -63,7 +63,7 @@ class toScalaConverters[T /*<: Com4jObject*/ ](inObj: T) {
 /*
 class asList[T <: Com4jObject](val inObj: T) {
 
-  def convertToList: List[Com4jObject] = {
+  def convertToList: CatiaV5TypeLibs.PartItfTypeLib.List[Com4jObject] = {
     inObj match {
       case sel: Selection => {
         val count = sel.count()
@@ -72,9 +72,9 @@ class asList[T <: Com4jObject](val inObj: T) {
       case iterable: Collection => JavaConverters.asScalaIterator(iterable.iterator).toList
     }
 
-    def toListOneByOne[T <: Selection](inObj: T, iter: Int, count: Int): List[Com4jObject] = {
-      if (iter > count) List()
-      else List(inObj.item(iter)) ++ toListOneByOne(inObj, iter + 1, count)
+    def toListOneByOne[T <: Selection](inObj: T, iter: Int, count: Int): CatiaV5TypeLibs.PartItfTypeLib.List[Com4jObject] = {
+      if (iter > count) CatiaV5TypeLibs.PartItfTypeLib.List()
+      else CatiaV5TypeLibs.PartItfTypeLib.List(inObj.item(iter)) ++ toListOneByOne(inObj, iter + 1, count)
     }
 
   }

@@ -1,0 +1,25 @@
+import CatiaV5TypeLibs.InfItfTypeLib.*;
+package CatiaV5TypeLibs.PartItfTypeLib;
+
+/**
+ */
+public enum CatProductSource {
+  /**
+   * <p>
+   * The value of this constant is 0
+   * </p>
+   */
+  catProductSourceUnknown, // 0
+  /**
+   * <p>
+   * The value of this constant is 1
+   * </p>
+   */
+  catProductMade, // 1
+  /**
+   * <p>
+   * The value of this constant is 2
+   * </p>
+   */
+  catProductBought, // 2
+}
