@@ -1,12 +1,15 @@
 import java.io.{File, FileInputStream, FileWriter, PrintWriter}
 
+import scala.collection.immutable.Map.Map1
 import scala.io.Source
 
+new Map1()
 
-//val pathh = getClass.getResource("CatiaV5TypeLibs").getPath
+
 val PATH = "/C:/Users/pawel/Desktop/CatiaV5Com4j/src/main/resources/CatiaV5TypeLibs/PartItfTypeLib"
 val folder = new File(PATH /* + "/PartItfTypeLib"*/)
-folder.exists()
+val folders =  new packageHelper
+
 
 val fileInsertPlace: List[(File, Int)] = (for {
   file <- folder.listFiles()
