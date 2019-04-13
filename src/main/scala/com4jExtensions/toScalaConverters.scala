@@ -2,22 +2,13 @@ package com4jExtensions
 
 import java.lang.reflect.Method
 
-import CatiaV5TypeLibs.InfItfTypeLib.{Collection, SelectedElement}
+import CatiaV5TypeLibs.InfTypeLib.{Collection, SelectedElement}
 import com4j._
 
 import scala.collection.JavaConverters
-import java.lang.Iterable
-
-trait itemable {
-
-  def count
-
-  def item(i: Int): SelectedElement
-
-}
 
 
-class toScalaConverters[T /*<: Com4jObject*/ ](inObj: T) {
+class toScalaConverters[T](inObj: T) {
 
   @throws[NoSuchElementException]("")
   def toList(): List[Com4jObject] = {

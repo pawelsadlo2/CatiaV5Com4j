@@ -1,20 +1,21 @@
 import java.io.File
 
-import CatiaV5TypeLibs.PartItfTypeLib.{HybridShapeInstance, ShapeInstance}
+import CatiaV5TypeLibs.PartTypeLib.{HybridShapeInstance, ShapeInstance}
+import com4jExtensions.toScalaConverters
 
-object starter extends comImportHelper {
+object starter {
 
-  import CatiaV5TypeLibs.InfItfTypeLib._
+  import CatiaV5TypeLibs.InfTypeLib._
   import com4j._
-  import com4jExtensions.toScalaConverters
+
 
   import scala.util.{Failure, Success, Try}
 
   def main(args: Array[String]): Unit = {
 
-    val path1 = "C:\\Users\\pawel\\Desktop\\CatiaV5Com4j\\utils\\CATIA\\1"
-    val path2 = "C:\\Users\\pawel\\Desktop\\CatiaV5Com4j\\utils\\CATIA\\2"
-    val intersect = filesIntersection(path1, path2)
+//    val path1 = "C:\\Users\\pawel\\Desktop\\CatiaV5Com4j\\utils\\CATIA\\1"
+//    val path2 = "C:\\Users\\pawel\\Desktop\\CatiaV5Com4j\\utils\\CATIA\\2"
+//    val intersect = filesIntersection(path1, path2)
 
     val catiaApp = getCatiaApp
     val activeDoc = catiaApp.activeDocument()
@@ -23,11 +24,11 @@ object starter extends comImportHelper {
 
     val list = converter.toList()
     val instance = list.head
-    val name = instance.queryInterface(classOf[AnyObject]).name
-    val instance2 = instance.queryInterface(classOf[ShapeInstance])
-    val inputsCount = instance2.inputsCount()
-    val outputs = instance2.outputsCount()
-    val x = 1
+//    val name = instance.queryInterface(classOf[AnyObject]).name
+//    val instance2 = instance.queryInterface(classOf[ShapeInstance])
+//    val inputsCount = instance2.inputsCount()
+//    val outputs = instance2.outputsCount()
+//    val x = 1
     //val listString = list.toString()
 
     //

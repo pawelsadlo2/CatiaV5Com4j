@@ -1,4 +1,5 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
 
 import com4j.*;
