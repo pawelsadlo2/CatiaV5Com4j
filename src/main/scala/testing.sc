@@ -39,9 +39,14 @@ import java.io.InputStream
 
 
 val catiaApp = getCatiaApp
-val windows = catiaApp.windows().queryInterface(classOf[Windows])
-val x = new toScalaConverters(windows)
-  //.iterableToList()
+val activeDoc = catiaApp.activeDocument()
+val selection = activeDoc.selection()
+val converter = new toScalaConverters(selection)
+
+val list = converter.toList()
+//val listString = list.toString()
+//val x = new toScalaConverters(windows)
+//.iterableToList()
 //catiaApp.asInstanceOf[toScalaConverters].x
 /*val documents = catiaApp.documents()
 val documentsList: CatiaV5TypeLibs.PartItfTypeLib.List[Document] =

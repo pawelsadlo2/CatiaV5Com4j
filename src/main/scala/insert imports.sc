@@ -1,19 +1,19 @@
 import java.io.{File, FileInputStream, FileWriter, PrintWriter}
 
+import x.packageHelper
+
 import scala.collection.immutable.Map.Map1
 import scala.io.Source
 
-new Map1()
 
 
-val PATH = "/C:/Users/pawel/Desktop/CatiaV5Com4j/src/main/resources/CatiaV5TypeLibs/PartItfTypeLib"
+val PATH = "/C:/Users/pawel/Desktop/CatiaV5Com4j/src/main/java/CatiaV5TypeLibs/HybridShapeTypeLib"
 val folder = new File(PATH /* + "/PartItfTypeLib"*/)
-val folders =  new packageHelper
 
 
 val fileInsertPlace: List[(File, Int)] = (for {
   file <- folder.listFiles()
-} yield (file, lastContainingLineIndex(file, "import"))).toList
+} yield (file, lastContainingLineIndex(file, "package"))).toList
 
 def lastContainingLineIndex(file: File, string: String) = {
   val lines: Stream[String] = Source.fromFile(file).getLines().toStream
@@ -24,7 +24,7 @@ val inserted = for {
   (file, index) <- fileInsertPlace
 } yield {
   val lines = Source.fromFile(file).getLines().toList
-  (file, insert(lines, index + 1, "import CatiaV5TypeLibs.InfItfTypeLib.*;"))
+  (file, insert(lines, index + 1, "import CatiaV5TypeLibs.InfTypeLib.*;\nimport CatiaV5TypeLibs.MecModTypeLib.*;\nimport CatiaV5TypeLibs.KnowledgewareTypeLib.*;"))
 }
 
 def insert(list: List[Any], i: Int, value: Any): List[Any] = list match {

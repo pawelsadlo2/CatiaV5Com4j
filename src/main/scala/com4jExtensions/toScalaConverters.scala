@@ -6,7 +6,7 @@ import CatiaV5TypeLibs.InfItfTypeLib.{Collection, SelectedElement}
 import com4j._
 
 import scala.collection.JavaConverters
-
+import java.lang.Iterable
 
 trait itemable {
 
@@ -22,7 +22,7 @@ class toScalaConverters[T /*<: Com4jObject*/ ](inObj: T) {
   @throws[NoSuchElementException]("")
   def toList(): List[Com4jObject] = {
     inObj match {
-      case iterable: Collection => iterableToList(iterable)
+      case iterable: java.lang.Iterable[Com4jObject] => iterableToList(iterable)
       case itemable => {
         val methods = itemable.getClass.getDeclaredMethods.toList
         val countMethod: Method = methods.lift(methods.indexWhere(_.getName == "count"))
@@ -36,10 +36,12 @@ class toScalaConverters[T /*<: Com4jObject*/ ](inObj: T) {
         def itemableToList(iter: Int, listIter: List[Com4jObject]): List[Com4jObject] = {
           if (iter > count) listIter
           else {
-            //iter.getClass
+            val javaIter = iter.asInstanceOf[AnyRef]
+            val item: Com4jObject = itemMethod.invoke(itemable, javaIter).asInstanceOf[Com4jObject]
+            val itemValue = if (item.is(classOf[SelectedElement])) item.queryInterface(classOf[SelectedElement]).value()
+            else item
 
-            val item: SelectedElement = itemMethod.invoke(itemable, scala.Array(iter)).asInstanceOf[SelectedElement]
-            itemableToList(iter + 1, listIter ++ List(item.value))
+            itemableToList(iter + 1, listIter ++ List(itemValue))
           }
         }
 
@@ -47,13 +49,11 @@ class toScalaConverters[T /*<: Com4jObject*/ ](inObj: T) {
       }
     }
 
-
   }
 
 
-
-  def iterableToList(obj: Collection): List[Com4jObject] = {
-    val inObjIterable = obj.queryInterface(classOf[Collection]).iterator()
+  def iterableToList(obj: java.lang.Iterable[Com4jObject]): List[Com4jObject] = {
+    val inObjIterable: java.util.Iterator[Com4jObject] = obj.iterator
     JavaConverters.asScalaIterator(inObjIterable).toList
   }
 
