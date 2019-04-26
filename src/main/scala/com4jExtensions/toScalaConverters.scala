@@ -8,43 +8,45 @@ import com4j._
 import scala.collection.JavaConverters
 
 
-class toScalaConverters[T](inObj: T) {
+class toScalaConverters(inObj: Any) {
 
   @throws[NoSuchElementException]("")
-  def toList(): List[Com4jObject] = {
+  def toList(): List[Any] = {
     inObj match {
-      case iterable: java.lang.Iterable[Com4jObject] => iterableToList(iterable)
-      case itemable => {
-        val methods = itemable.getClass.getDeclaredMethods.toList
-        val countMethod: Method = methods.lift(methods.indexWhere(_.getName == "count"))
-          .getOrElse(throw new NoSuchElementException("Object doesnt implement count method"))
-
-        val itemMethod: Method = methods.lift(methods.indexWhere(m => m.getName == "item" && m.getParameterCount == 1))
-          .getOrElse(throw new NoSuchElementException("Object doesnt implement item(i) method"))
-
-        val count: Int = countMethod.invoke(itemable).toString.toInt
-
-        def itemableToList(iter: Int, listIter: List[Com4jObject]): List[Com4jObject] = {
-          if (iter > count) listIter
-          else {
-            val javaIter = iter.asInstanceOf[AnyRef]
-            val item: Com4jObject = itemMethod.invoke(itemable, javaIter).asInstanceOf[Com4jObject]
-            val itemValue = if (item.is(classOf[SelectedElement])) item.queryInterface(classOf[SelectedElement]).value()
-            else item
-
-            itemableToList(iter + 1, listIter ++ List(itemValue))
-          }
-        }
-
-        itemableToList(1, List())
-      }
+      case iterable: java.lang.Iterable[Any] => iterableToList(iterable)
+      case itemable => itemableValuesToListTry(itemableToList(itemable))
     }
 
   }
 
+  def itemableToList[T](itemable: T): List[Any] = {
+    def itemableToListIter[T](iter: Int, listIter: List[Any], itemable: T): List[Any] = {
+      val methods = itemable.getClass.getDeclaredMethods.toList
+      val countMethod: Method = methods.lift(methods.indexWhere(_.getName == "count"))
+        .getOrElse(throw new NoSuchElementException("Object doesnt implement count method"))
+      val itemMethod: Method = methods.lift(methods.indexWhere(m => m.getName == "item" && m.getParameterCount == 1))
+        .getOrElse(throw new NoSuchElementException("Object doesnt implement item(i) method"))
+      val count: Int = countMethod.invoke(itemable).toString.toInt
 
-  def iterableToList(obj: java.lang.Iterable[Com4jObject]): List[Com4jObject] = {
-    val inObjIterable: java.util.Iterator[Com4jObject] = obj.iterator
+      if (iter > count) listIter
+      else {
+        val javaIter = iter.asInstanceOf[AnyRef]
+        val item: Any = itemMethod.invoke(itemable, javaIter)
+
+
+        itemableToListIter(iter + 1, listIter ++ List(item), itemable)
+      }
+    }
+    itemableToListIter(1, List(), itemable)
+  }
+
+  def itemableValuesToListTry(itemableList: List[Any]): List[Any] = itemableList.map(item => {
+    if (item.asInstanceOf[Com4jObject].is(classOf[SelectedElement])) item.asInstanceOf[Com4jObject].queryInterface(classOf[SelectedElement]).value()
+    else item
+  })
+
+  def iterableToList(obj: java.lang.Iterable[Any]): List[Any] = {
+    val inObjIterable: java.util.Iterator[Any] = obj.iterator
     JavaConverters.asScalaIterator(inObjIterable).toList
   }
 
