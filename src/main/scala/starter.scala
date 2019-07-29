@@ -17,7 +17,6 @@ object starter {
 
 
   def main(args: Array[String]): Unit = {
-
     val catias = catiaApps
     // .filter(_.)
 
@@ -75,6 +74,5 @@ object starter {
   }
 
   def methods(inObj: Com4jObject): List[Method] = inObj.getClass.getDeclaredMethods.toList
-
 
 }
