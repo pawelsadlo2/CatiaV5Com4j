@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{A014ABDE-6B19-11D1-A280-0000F87546FD}")

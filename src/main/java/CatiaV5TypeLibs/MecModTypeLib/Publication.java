@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -62,7 +63,7 @@ public interface Publication extends AnyObject {
    * <p>
    * Setter method for the COM property "Relay"
    * </p>
-   * @param rhs Mandatory CatiaV5TypeLibs.PartItfTypeLib.Publication parameter.
+   * @param rhs Mandatory Publication parameter.
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present

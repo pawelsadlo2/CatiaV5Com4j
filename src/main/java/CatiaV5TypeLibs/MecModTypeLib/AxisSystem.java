@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{6E1073C2-D7CB-11D3-85A0-00108301432B}")
@@ -11,7 +12,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Getter method for the COM property "Type"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemMainType
+   * @return  Returns a value of type CATAxisSystemMainType
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -23,7 +24,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Setter method for the COM property "Type"
    * </p>
-   * @param oType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemMainType parameter.
+   * @param oType Mandatory CATAxisSystemMainType parameter.
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -61,7 +62,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Getter method for the COM property "OriginType"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemOriginType
+   * @return  Returns a value of type CATAxisSystemOriginType
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present
@@ -73,7 +74,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Setter method for the COM property "OriginType"
    * </p>
-   * @param oOriginType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemOriginType parameter.
+   * @param oOriginType Mandatory CATAxisSystemOriginType parameter.
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present
@@ -111,7 +112,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Getter method for the COM property "XAxisType"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemAxisType
+   * @return  Returns a value of type CATAxisSystemAxisType
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present
@@ -123,7 +124,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Setter method for the COM property "XAxisType"
    * </p>
-   * @param oAxisType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemAxisType parameter.
+   * @param oAxisType Mandatory CATAxisSystemAxisType parameter.
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present
@@ -136,7 +137,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Getter method for the COM property "YAxisType"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemAxisType
+   * @return  Returns a value of type CATAxisSystemAxisType
    */
 
   @DISPID(1610940426) //= 0x6005000a. The runtime will prefer the VTID if present
@@ -148,7 +149,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Setter method for the COM property "YAxisType"
    * </p>
-   * @param oAxisType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemAxisType parameter.
+   * @param oAxisType Mandatory CATAxisSystemAxisType parameter.
    */
 
   @DISPID(1610940426) //= 0x6005000a. The runtime will prefer the VTID if present
@@ -161,7 +162,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Getter method for the COM property "ZAxisType"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemAxisType
+   * @return  Returns a value of type CATAxisSystemAxisType
    */
 
   @DISPID(1610940428) //= 0x6005000c. The runtime will prefer the VTID if present
@@ -173,7 +174,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Setter method for the COM property "ZAxisType"
    * </p>
-   * @param oAxisType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CATAxisSystemAxisType parameter.
+   * @param oAxisType Mandatory CATAxisSystemAxisType parameter.
    */
 
   @DISPID(1610940428) //= 0x6005000c. The runtime will prefer the VTID if present
@@ -286,7 +287,7 @@ public interface AxisSystem extends AnyObject {
    * <p>
    * Getter method for the COM property "AxisRotationAngle"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Angle
+   * @return  Returns a value of type Angle
    */
 
   @DISPID(1610940438) //= 0x60050016. The runtime will prefer the VTID if present
@@ -399,9 +400,9 @@ public interface AxisSystem extends AnyObject {
 
 
   /**
-   * @param oFirstAngle Mandatory Holder<CatiaV5TypeLibs.PartItfTypeLib.Angle> parameter.
-   * @param oSecondAngle Mandatory Holder<CatiaV5TypeLibs.PartItfTypeLib.Angle> parameter.
-   * @param thirdAngle Mandatory Holder<CatiaV5TypeLibs.PartItfTypeLib.Angle> parameter.
+   * @param oFirstAngle Mandatory Holder<Angle> parameter.
+   * @param oSecondAngle Mandatory Holder<Angle> parameter.
+   * @param thirdAngle Mandatory Holder<Angle> parameter.
    */
 
   @DISPID(1610940449) //= 0x60050021. The runtime will prefer the VTID if present

@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -8,8 +9,8 @@ import com4j.*;
 public interface Products extends Collection {
   // Methods:
   /**
-   * @param iReferenceProduct Mandatory CatiaV5TypeLibs.PartItfTypeLib.Product parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @param iReferenceProduct Mandatory Product parameter.
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -20,7 +21,7 @@ public interface Products extends Collection {
 
   /**
    * @param iPartNumber Mandatory Holder<java.lang.String> parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -31,7 +32,7 @@ public interface Products extends Collection {
 
   /**
    * @param iProductDocument Mandatory Document parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -43,7 +44,7 @@ public interface Products extends Collection {
   /**
    * @param iDocumenType Mandatory Holder<java.lang.String> parameter.
    * @param iPartNumber Mandatory Holder<java.lang.String> parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940419) //= 0x60050003. The runtime will prefer the VTID if present
@@ -65,7 +66,7 @@ public interface Products extends Collection {
 
   /**
    * @param iIndex Mandatory java.lang.Object parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940421) //= 0x60050005. The runtime will prefer the VTID if present
@@ -87,10 +88,10 @@ public interface Products extends Collection {
 
 
   /**
-   * @param iOldComponent Mandatory CatiaV5TypeLibs.PartItfTypeLib.Product parameter.
+   * @param iOldComponent Mandatory Product parameter.
    * @param iFilePath Mandatory Holder<java.lang.String> parameter.
    * @param iMultiInstances Mandatory boolean parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940423) //= 0x60050007. The runtime will prefer the VTID if present
@@ -102,10 +103,10 @@ public interface Products extends Collection {
 
 
   /**
-   * @param iOldComponent Mandatory CatiaV5TypeLibs.PartItfTypeLib.Product parameter.
-   * @param iNewReference Mandatory CatiaV5TypeLibs.PartItfTypeLib.Product parameter.
+   * @param iOldComponent Mandatory Product parameter.
+   * @param iNewReference Mandatory Product parameter.
    * @param iMultiInstances Mandatory boolean parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present

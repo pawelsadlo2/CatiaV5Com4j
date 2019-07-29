@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -8,7 +9,7 @@ import com4j.*;
 public interface AxisSystems extends Collection {
   // Methods:
   /**
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.AxisSystem
+   * @return  Returns a value of type AxisSystem
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -18,7 +19,7 @@ public interface AxisSystems extends Collection {
 
   /**
    * @param iIndex Mandatory java.lang.Object parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.AxisSystem
+   * @return  Returns a value of type AxisSystem
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present

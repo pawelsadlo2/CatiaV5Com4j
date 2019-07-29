@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -16,7 +17,7 @@ public interface HybridShape extends AnyObject {
 
 
   /**
-   * @param iHybridShape Mandatory CatiaV5TypeLibs.PartItfTypeLib.HybridShape parameter.
+   * @param iHybridShape Mandatory HybridShape parameter.
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -27,9 +28,9 @@ public interface HybridShape extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Thickness"
+   * Getter method for the COM property "Thickness"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.HybridShape
+   * @return  Returns a value of type HybridShape
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present

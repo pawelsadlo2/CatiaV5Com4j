@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{CAC0042A-6BD0-11D1-A280-0000F87546FD}")
@@ -11,7 +12,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "Type"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintType
+   * @return  Returns a value of type CatConstraintType
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -21,9 +22,9 @@ public interface Constraint extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Dimension"
+   * Getter method for the COM property "Dimension"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Dimension
+   * @return  Returns a value of type Dimension
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -35,7 +36,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "Mode"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintMode
+   * @return  Returns a value of type CatConstraintMode
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -47,7 +48,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "Mode"
    * </p>
-   * @param oMode Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintMode parameter.
+   * @param oMode Mandatory CatConstraintMode parameter.
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -60,7 +61,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "Side"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintSide
+   * @return  Returns a value of type CatConstraintSide
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present
@@ -72,7 +73,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "Side"
    * </p>
-   * @param oCurrentSide Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintSide parameter.
+   * @param oCurrentSide Mandatory CatConstraintSide parameter.
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present
@@ -85,7 +86,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "Orientation"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintOrientation
+   * @return  Returns a value of type CatConstraintOrientation
    */
 
   @DISPID(1610940422) //= 0x60050006. The runtime will prefer the VTID if present
@@ -97,7 +98,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "Orientation"
    * </p>
-   * @param oOrient Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintOrientation parameter.
+   * @param oOrient Mandatory CatConstraintOrientation parameter.
    */
 
   @DISPID(1610940422) //= 0x60050006. The runtime will prefer the VTID if present
@@ -110,7 +111,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "DistanceConfig"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintDistConfig
+   * @return  Returns a value of type CatConstraintDistConfig
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present
@@ -122,7 +123,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "DistanceConfig"
    * </p>
-   * @param oCurrentConf Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintDistConfig parameter.
+   * @param oCurrentConf Mandatory CatConstraintDistConfig parameter.
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present
@@ -135,7 +136,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "DistanceDirection"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintDistDirection
+   * @return  Returns a value of type CatConstraintDistDirection
    */
 
   @DISPID(1610940426) //= 0x6005000a. The runtime will prefer the VTID if present
@@ -147,7 +148,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "DistanceDirection"
    * </p>
-   * @param oCurrentDirection Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintDistDirection parameter.
+   * @param oCurrentDirection Mandatory CatConstraintDistDirection parameter.
    */
 
   @DISPID(1610940426) //= 0x6005000a. The runtime will prefer the VTID if present
@@ -160,7 +161,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "AngleSector"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintAngleSector
+   * @return  Returns a value of type CatConstraintAngleSector
    */
 
   @DISPID(1610940428) //= 0x6005000c. The runtime will prefer the VTID if present
@@ -172,7 +173,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "AngleSector"
    * </p>
-   * @param oCurrentSector Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintAngleSector parameter.
+   * @param oCurrentSector Mandatory CatConstraintAngleSector parameter.
    */
 
   @DISPID(1610940428) //= 0x6005000c. The runtime will prefer the VTID if present
@@ -185,7 +186,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "ReferenceAxis"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintRefAxis
+   * @return  Returns a value of type CatConstraintRefAxis
    */
 
   @DISPID(1610940430) //= 0x6005000e. The runtime will prefer the VTID if present
@@ -197,7 +198,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "ReferenceAxis"
    * </p>
-   * @param oCurrentRefAxis Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintRefAxis parameter.
+   * @param oCurrentRefAxis Mandatory CatConstraintRefAxis parameter.
    */
 
   @DISPID(1610940430) //= 0x6005000e. The runtime will prefer the VTID if present
@@ -210,7 +211,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "ReferenceType"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintRefType
+   * @return  Returns a value of type CatConstraintRefType
    */
 
   @DISPID(1610940432) //= 0x60050010. The runtime will prefer the VTID if present
@@ -222,7 +223,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Setter method for the COM property "ReferenceType"
    * </p>
-   * @param oCurrentRefType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatConstraintRefType parameter.
+   * @param oCurrentRefType Mandatory CatConstraintRefType parameter.
    */
 
   @DISPID(1610940432) //= 0x60050010. The runtime will prefer the VTID if present
@@ -235,7 +236,7 @@ public interface Constraint extends AnyObject {
    * <p>
    * Getter method for the COM property "Status"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatConstraintStatus
+   * @return  Returns a value of type CatConstraintStatus
    */
 
   @DISPID(1610940434) //= 0x60050012. The runtime will prefer the VTID if present

@@ -10,16 +10,24 @@ import CatiaV5TypeLibs.HybridShapeTypeLib._
 
 import com4jExtensions.IIDsFileUpdate.{getIIdsList, typeLibsFolder}
 import com4jExtensions.helpers._
+import org.reflections.Reflections
 
 object starter {
 
 
   def main(args: Array[String]): Unit = {
+
+
+
+    // .filter(_.)
+
+
+    //val reflections = new Reflections("CatiaV5TypeLibs.HybridShapeTypeLib.*")
+    //val subtypes = reflections.
     //val iidsList = getIIdsList(typeLibsFolder)
     //    val path1 = "C:\\Users\\pawel\\Desktop\\CatiaV5Com4j\\utils\\CATIA\\1"
     //    val path2 = "C:\\Users\\pawel\\Desktop\\CatiaV5Com4j\\utils\\CATIA\\2"
     //    val intersect = filesIntersection(path1, path2)
-    val indexes =
     val activeDoc = catiaApp.activeDocument()
     val selection = activeDoc.selection()
     val converter = new toScalaConverters(selection)
@@ -28,12 +36,12 @@ object starter {
     val types = list.map(x => getType(x.asInstanceOf[Com4jObject].queryInterface(classOf[AnyObject])))
 
 
-    val instance = list.head.asInstanceOf[Com4jObject].queryInterface(classOf[AnyObject])
-    val instanceType: String = getType(instance)
+    //val instance = list.head.asInstanceOf[Com4jObject].queryInterface(classOf[AnyObject])
+    val instanceMethods = getReferenceComMethods(list.head)
+    //val subtypes = reflections.getAllTypes
     //val instanceQuery = instance.queryInterface[classOf[instanceType]]
-    val instanceClass = Class.forName(instanceType)
-    val methods = instanceClass.getDeclaredMethods
-    val referenceMethods = methods.toList.filter(_.getReturnType.getTypeName.contains("Reference"))
+
+    //val referenceMethods = methods.toList.filter(_.getReturnType.getTypeName.contains("Reference"))
 
 
     //val x= new java.lang.Class()

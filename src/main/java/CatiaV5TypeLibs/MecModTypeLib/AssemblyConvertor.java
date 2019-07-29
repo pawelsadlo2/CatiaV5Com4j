@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{50C18F38-40FC-11D3-9315-006094EB72E6}")
@@ -10,7 +11,7 @@ public interface AssemblyConvertor extends AnyObject {
   /**
    * @param iFileType Mandatory Holder<java.lang.String> parameter.
    * @param iFile Mandatory Holder<java.lang.String> parameter.
-   * @param iProduct Mandatory CatiaV5TypeLibs.PartItfTypeLib.Product parameter.
+   * @param iProduct Mandatory Product parameter.
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present

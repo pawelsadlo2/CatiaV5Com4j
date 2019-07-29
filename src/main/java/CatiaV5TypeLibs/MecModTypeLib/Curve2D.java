@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{80EC7509-B0E8-0000-0280-030BA6000000}")
@@ -11,7 +12,7 @@ public interface Curve2D extends Geometry2D {
    * <p>
    * Getter method for the COM property "StartPoint"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Point2D
+   * @return  Returns a value of type Point2D
    */
 
   @DISPID(1611071488) //= 0x60070000. The runtime will prefer the VTID if present
@@ -23,7 +24,7 @@ public interface Curve2D extends Geometry2D {
    * <p>
    * Setter method for the COM property "StartPoint"
    * </p>
-   * @param oStartPoint Mandatory CatiaV5TypeLibs.PartItfTypeLib.Point2D parameter.
+   * @param oStartPoint Mandatory Point2D parameter.
    */
 
   @DISPID(1611071488) //= 0x60070000. The runtime will prefer the VTID if present
@@ -36,7 +37,7 @@ public interface Curve2D extends Geometry2D {
    * <p>
    * Getter method for the COM property "EndPoint"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Point2D
+   * @return  Returns a value of type Point2D
    */
 
   @DISPID(1611071490) //= 0x60070002. The runtime will prefer the VTID if present
@@ -48,7 +49,7 @@ public interface Curve2D extends Geometry2D {
    * <p>
    * Setter method for the COM property "EndPoint"
    * </p>
-   * @param oEndPoint Mandatory CatiaV5TypeLibs.PartItfTypeLib.Point2D parameter.
+   * @param oEndPoint Mandatory Point2D parameter.
    */
 
   @DISPID(1611071490) //= 0x60070002. The runtime will prefer the VTID if present

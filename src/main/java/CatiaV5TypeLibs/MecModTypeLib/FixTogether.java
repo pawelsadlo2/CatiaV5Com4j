@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -32,7 +33,7 @@ public interface FixTogether extends AnyObject {
 
 
   /**
-   * @param iProduct Mandatory CatiaV5TypeLibs.PartItfTypeLib.Product parameter.
+   * @param iProduct Mandatory Product parameter.
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -43,7 +44,7 @@ public interface FixTogether extends AnyObject {
 
   /**
    * @param iIndex Mandatory java.lang.Object parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940419) //= 0x60050003. The runtime will prefer the VTID if present
@@ -63,7 +64,7 @@ public interface FixTogether extends AnyObject {
 
 
   /**
-   * @param iFixTogether Mandatory CatiaV5TypeLibs.PartItfTypeLib.FixTogether parameter.
+   * @param iFixTogether Mandatory FixTogether parameter.
    */
 
   @DISPID(1610940421) //= 0x60050005. The runtime will prefer the VTID if present
@@ -74,7 +75,7 @@ public interface FixTogether extends AnyObject {
 
   /**
    * @param iIndex Mandatory java.lang.Object parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.FixTogether
+   * @return  Returns a value of type FixTogether
    */
 
   @DISPID(1610940422) //= 0x60050006. The runtime will prefer the VTID if present

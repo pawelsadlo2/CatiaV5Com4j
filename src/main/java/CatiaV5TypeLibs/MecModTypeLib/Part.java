@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{D402D912-39A4-11D1-A26C-0000F87546FD}")
@@ -11,7 +12,7 @@ public interface Part extends AnyObject {
    * <p>
    * Getter method for the COM property "MainBody"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Body
+   * @return  Returns a value of type Body
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -23,7 +24,7 @@ public interface Part extends AnyObject {
    * <p>
    * Setter method for the COM property "MainBody"
    * </p>
-   * @param oMainBody Mandatory CatiaV5TypeLibs.PartItfTypeLib.Body parameter.
+   * @param oMainBody Mandatory Body parameter.
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -59,9 +60,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Bodies"
+   * Getter method for the COM property "Bodies"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Bodies
+   * @return  Returns a value of type Bodies
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present
@@ -71,9 +72,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.HybridBodies"
+   * Getter method for the COM property "HybridBodies"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.HybridBodies
+   * @return  Returns a value of type HybridBodies
    */
 
   @DISPID(1610940421) //= 0x60050005. The runtime will prefer the VTID if present
@@ -83,9 +84,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.ShapeFactory"
+   * Getter method for the COM property "ShapeFactory"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Factory
+   * @return  Returns a value of type Factory
    */
 
   @DISPID(1610940422) //= 0x60050006. The runtime will prefer the VTID if present
@@ -97,7 +98,7 @@ public interface Part extends AnyObject {
    * <p>
    * Getter method for the COM property "HybridShapeFactory"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Factory
+   * @return  Returns a value of type Factory
    */
 
   @DISPID(1610940423) //= 0x60050007. The runtime will prefer the VTID if present
@@ -109,7 +110,7 @@ public interface Part extends AnyObject {
    * <p>
    * Getter method for the COM property "SheetMetalFactory"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Factory
+   * @return  Returns a value of type Factory
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present
@@ -131,9 +132,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.GeometricElements"
+   * Getter method for the COM property "GeometricElements"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.GeometricElements
+   * @return  Returns a value of type GeometricElements
    */
 
   @DISPID(1610940426) //= 0x6005000a. The runtime will prefer the VTID if present
@@ -143,9 +144,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Constraints"
+   * Getter method for the COM property "Constraints"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Constraints
+   * @return  Returns a value of type Constraints
    */
 
   @DISPID(1610940427) //= 0x6005000b. The runtime will prefer the VTID if present
@@ -155,9 +156,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Relations"
+   * Getter method for the COM property "Relations"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Relations
+   * @return  Returns a value of type Relations
    */
 
   @DISPID(1610940428) //= 0x6005000c. The runtime will prefer the VTID if present
@@ -167,9 +168,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Parameters"
+   * Getter method for the COM property "Parameters"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Parameters
+   * @return  Returns a value of type Parameters
    */
 
   @DISPID(1610940429) //= 0x6005000d. The runtime will prefer the VTID if present
@@ -203,9 +204,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.AxisSystems"
+   * Getter method for the COM property "AxisSystems"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.AxisSystems
+   * @return  Returns a value of type AxisSystems
    */
 
   @DISPID(1610940432) //= 0x60050010. The runtime will prefer the VTID if present
@@ -215,9 +216,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.OriginElements"
+   * Getter method for the COM property "OriginElements"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.OriginElements
+   * @return  Returns a value of type OriginElements
    */
 
   @DISPID(1610940433) //= 0x60050011. The runtime will prefer the VTID if present
@@ -356,7 +357,7 @@ public interface Part extends AnyObject {
 
   /**
    * @param iFactoryIID Mandatory Holder<java.lang.String> parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Factory
+   * @return  Returns a value of type Factory
    */
 
   @DISPID(1610940446) //= 0x6005001e. The runtime will prefer the VTID if present
@@ -367,9 +368,9 @@ public interface Part extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.OrderedGeometricalSets"
+   * Getter method for the COM property "OrderedGeometricalSets"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.OrderedGeometricalSets
+   * @return  Returns a value of type OrderedGeometricalSets
    */
 
   @DISPID(1610940447) //= 0x6005001f. The runtime will prefer the VTID if present

@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -18,7 +19,7 @@ public interface Spline2D extends Curve2D {
 
 
   /**
-   * @param iCtrlPoint Mandatory CatiaV5TypeLibs.PartItfTypeLib.Point2D parameter.
+   * @param iCtrlPoint Mandatory Point2D parameter.
    * @param iPosition Mandatory int parameter.
    */
 

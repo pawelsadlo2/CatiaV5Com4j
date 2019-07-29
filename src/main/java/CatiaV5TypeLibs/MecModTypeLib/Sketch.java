@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -9,9 +10,9 @@ public interface Sketch extends AnyObject {
   // Methods:
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.GeometricElements"
+   * Getter method for the COM property "GeometricElements"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.GeometricElements
+   * @return  Returns a value of type GeometricElements
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -21,9 +22,9 @@ public interface Sketch extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Constraints"
+   * Getter method for the COM property "Constraints"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Constraints
+   * @return  Returns a value of type Constraints
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -33,9 +34,9 @@ public interface Sketch extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Factory2D"
+   * Getter method for the COM property "Factory2D"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Factory2D
+   * @return  Returns a value of type Factory2D
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -47,7 +48,7 @@ public interface Sketch extends AnyObject {
    * <p>
    * Getter method for the COM property "CenterLine"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Line2D
+   * @return  Returns a value of type Line2D
    */
 
   @DISPID(1610940419) //= 0x60050003. The runtime will prefer the VTID if present
@@ -59,7 +60,7 @@ public interface Sketch extends AnyObject {
    * <p>
    * Setter method for the COM property "CenterLine"
    * </p>
-   * @param oLine Mandatory CatiaV5TypeLibs.PartItfTypeLib.Line2D parameter.
+   * @param oLine Mandatory Line2D parameter.
    */
 
   @DISPID(1610940419) //= 0x60050003. The runtime will prefer the VTID if present
@@ -72,7 +73,7 @@ public interface Sketch extends AnyObject {
    * <p>
    * Getter method for the COM property "AbsoluteAxis"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Axis2D
+   * @return  Returns a value of type Axis2D
    */
 
   @DISPID(1610940421) //= 0x60050005. The runtime will prefer the VTID if present
@@ -101,7 +102,7 @@ public interface Sketch extends AnyObject {
 
 
   /**
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Factory2D
+   * @return  Returns a value of type Factory2D
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present

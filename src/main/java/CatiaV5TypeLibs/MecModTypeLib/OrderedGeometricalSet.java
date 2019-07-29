@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -9,9 +10,9 @@ public interface OrderedGeometricalSet extends AnyObject {
   // Methods:
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.HybridShapes"
+   * Getter method for the COM property "HybridShapes"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.HybridShapes
+   * @return  Returns a value of type HybridShapes
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -21,9 +22,9 @@ public interface OrderedGeometricalSet extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Bodies"
+   * Getter method for the COM property "Bodies"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Bodies
+   * @return  Returns a value of type Bodies
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -33,9 +34,9 @@ public interface OrderedGeometricalSet extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.OrderedGeometricalSets"
+   * Getter method for the COM property "OrderedGeometricalSets"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.OrderedGeometricalSets
+   * @return  Returns a value of type OrderedGeometricalSets
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -47,7 +48,7 @@ public interface OrderedGeometricalSet extends AnyObject {
    * <p>
    * Getter method for the COM property "OrderedSketches"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Sketches
+   * @return  Returns a value of type Sketches
    */
 
   @DISPID(1610940419) //= 0x60050003. The runtime will prefer the VTID if present
@@ -56,7 +57,7 @@ public interface OrderedGeometricalSet extends AnyObject {
 
 
   /**
-   * @param iHybridShape Mandatory CatiaV5TypeLibs.PartItfTypeLib.HybridShape parameter.
+   * @param iHybridShape Mandatory HybridShape parameter.
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present

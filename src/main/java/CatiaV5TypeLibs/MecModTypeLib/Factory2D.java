@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -10,7 +11,7 @@ public interface Factory2D extends AnyObject {
   /**
    * @param iX Mandatory double parameter.
    * @param iY Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Point2D
+   * @return  Returns a value of type Point2D
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -23,7 +24,7 @@ public interface Factory2D extends AnyObject {
   /**
    * @param iX Mandatory double parameter.
    * @param iY Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.ControlPoint2D
+   * @return  Returns a value of type ControlPoint2D
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -38,7 +39,7 @@ public interface Factory2D extends AnyObject {
    * @param iY1 Mandatory double parameter.
    * @param iX2 Mandatory double parameter.
    * @param iY2 Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Line2D
+   * @return  Returns a value of type Line2D
    */
 
   @DISPID(1610940418) //= 0x60050002. The runtime will prefer the VTID if present
@@ -55,7 +56,7 @@ public interface Factory2D extends AnyObject {
    * @param iY1 Mandatory double parameter.
    * @param iUX Mandatory double parameter.
    * @param iUY Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Line2D
+   * @return  Returns a value of type Line2D
    */
 
   @DISPID(1610940419) //= 0x60050003. The runtime will prefer the VTID if present
@@ -71,7 +72,7 @@ public interface Factory2D extends AnyObject {
    * @param iCenterX Mandatory double parameter.
    * @param iCenterY Mandatory double parameter.
    * @param iRadius Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Circle2D
+   * @return  Returns a value of type Circle2D
    */
 
   @DISPID(1610940420) //= 0x60050004. The runtime will prefer the VTID if present
@@ -88,7 +89,7 @@ public interface Factory2D extends AnyObject {
    * @param iRadius Mandatory double parameter.
    * @param iStartParam Mandatory double parameter.
    * @param iEndParam Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Circle2D
+   * @return  Returns a value of type Circle2D
    */
 
   @DISPID(1610940421) //= 0x60050005. The runtime will prefer the VTID if present
@@ -108,7 +109,7 @@ public interface Factory2D extends AnyObject {
    * @param iMajorY Mandatory double parameter.
    * @param iMajorRadius Mandatory double parameter.
    * @param iMinorRadius Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Ellipse2D
+   * @return  Returns a value of type Ellipse2D
    */
 
   @DISPID(1610940422) //= 0x60050006. The runtime will prefer the VTID if present
@@ -131,7 +132,7 @@ public interface Factory2D extends AnyObject {
    * @param iMinorRadius Mandatory double parameter.
    * @param iStartParam Mandatory double parameter.
    * @param iEndParam Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Ellipse2D
+   * @return  Returns a value of type Ellipse2D
    */
 
   @DISPID(1610940423) //= 0x60050007. The runtime will prefer the VTID if present
@@ -149,7 +150,7 @@ public interface Factory2D extends AnyObject {
 
   /**
    * @param iPoles Mandatory java.lang.Object[] parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Spline2D
+   * @return  Returns a value of type Spline2D
    */
 
   @DISPID(1610940424) //= 0x60050008. The runtime will prefer the VTID if present
@@ -160,7 +161,7 @@ public interface Factory2D extends AnyObject {
 
   /**
    * @param iGeometry Mandatory Reference parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.GeometricElements
+   * @return  Returns a value of type GeometricElements
    */
 
   @DISPID(1610940425) //= 0x60050009. The runtime will prefer the VTID if present
@@ -171,7 +172,7 @@ public interface Factory2D extends AnyObject {
 
   /**
    * @param iGeometry Mandatory Reference parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.GeometricElements
+   * @return  Returns a value of type GeometricElements
    */
 
   @DISPID(1610940426) //= 0x6005000a. The runtime will prefer the VTID if present
@@ -182,7 +183,7 @@ public interface Factory2D extends AnyObject {
 
   /**
    * @param iGeometry Mandatory Reference parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Geometry2D
+   * @return  Returns a value of type Geometry2D
    */
 
   @DISPID(1610940427) //= 0x6005000b. The runtime will prefer the VTID if present
@@ -193,7 +194,7 @@ public interface Factory2D extends AnyObject {
 
   /**
    * @param iGeometry Mandatory Reference parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Geometry2D
+   * @return  Returns a value of type Geometry2D
    */
 
   @DISPID(1610940428) //= 0x6005000c. The runtime will prefer the VTID if present
@@ -208,7 +209,7 @@ public interface Factory2D extends AnyObject {
    * @param iAxisX Mandatory double parameter.
    * @param iAxisY Mandatory double parameter.
    * @param iFocalDistance Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Parabola2D
+   * @return  Returns a value of type Parabola2D
    */
 
   @DISPID(1610940429) //= 0x6005000d. The runtime will prefer the VTID if present
@@ -228,7 +229,7 @@ public interface Factory2D extends AnyObject {
    * @param iAxisY Mandatory double parameter.
    * @param iMajorRadius Mandatory double parameter.
    * @param iMinorRadius Mandatory double parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Hyperbola2D
+   * @return  Returns a value of type Hyperbola2D
    */
 
   @DISPID(1610940430) //= 0x6005000e. The runtime will prefer the VTID if present

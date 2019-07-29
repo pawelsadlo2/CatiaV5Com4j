@@ -3,6 +3,7 @@ import CatiaV5TypeLibs.InfTypeLib.*;
 import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
+import CatiaV5TypeLibs.PartTypeLib.*;
 import com4j.*;
 
 @IID("{F5303B8F-39AD-11D1-A26C-0000F87546FD}")

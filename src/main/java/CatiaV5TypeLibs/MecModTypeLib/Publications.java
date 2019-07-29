@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{8BE882D1-1339-0000-0280-030D0E000000}")
@@ -9,7 +10,7 @@ public interface Publications extends Collection {
   // Methods:
   /**
    * @param iIdentifier Mandatory java.lang.Object parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Publication
+   * @return  Returns a value of type Publication
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -20,7 +21,7 @@ public interface Publications extends Collection {
 
   /**
    * @param iPublicName Mandatory Holder<java.lang.String> parameter.
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Publication
+   * @return  Returns a value of type Publication
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -41,7 +42,7 @@ public interface Publications extends Collection {
 
   /**
    * @param iIdentifier Mandatory java.lang.Object parameter.
-   * @param iRelayer Mandatory CatiaV5TypeLibs.PartItfTypeLib.Publications parameter.
+   * @param iRelayer Mandatory Publications parameter.
    * @param iNameInRelay Mandatory java.lang.Object parameter.
    */
 

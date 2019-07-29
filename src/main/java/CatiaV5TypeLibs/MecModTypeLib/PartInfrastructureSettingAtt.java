@@ -1,7 +1,8 @@
 package CatiaV5TypeLibs.MecModTypeLib;
+import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
 import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
-import CatiaV5TypeLibs.InfTypeLib.*;
 import com4j.*;
 
 @IID("{4928CA46-0E13-4081-A1D2-77D3B9613E08}")
@@ -251,7 +252,7 @@ public interface PartInfrastructureSettingAtt extends SettingController {
    * <p>
    * Getter method for the COM property "UpdateMode"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatPartUpdateMode
+   * @return  Returns a value of type CatPartUpdateMode
    */
 
   @DISPID(1611005972) //= 0x60060014. The runtime will prefer the VTID if present
@@ -263,7 +264,7 @@ public interface PartInfrastructureSettingAtt extends SettingController {
    * <p>
    * Setter method for the COM property "UpdateMode"
    * </p>
-   * @param oUpdateMode Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatPartUpdateMode parameter.
+   * @param oUpdateMode Mandatory CatPartUpdateMode parameter.
    */
 
   @DISPID(1611005972) //= 0x60060014. The runtime will prefer the VTID if present
@@ -539,7 +540,7 @@ public interface PartInfrastructureSettingAtt extends SettingController {
    * <p>
    * Getter method for the COM property "SurfaceElementsLocation"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatPartSurfaceElementsLocation
+   * @return  Returns a value of type CatPartSurfaceElementsLocation
    */
 
   @DISPID(1611005996) //= 0x6006002c. The runtime will prefer the VTID if present
@@ -551,7 +552,7 @@ public interface PartInfrastructureSettingAtt extends SettingController {
    * <p>
    * Setter method for the COM property "SurfaceElementsLocation"
    * </p>
-   * @param oLocation Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatPartSurfaceElementsLocation parameter.
+   * @param oLocation Mandatory CatPartSurfaceElementsLocation parameter.
    */
 
   @DISPID(1611005996) //= 0x6006002c. The runtime will prefer the VTID if present
@@ -1595,7 +1596,7 @@ public interface PartInfrastructureSettingAtt extends SettingController {
    * <p>
    * Getter method for the COM property "NamingMode"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatPartElementsNamingMode
+   * @return  Returns a value of type CatPartElementsNamingMode
    */
 
   @DISPID(1611006084) //= 0x60060084. The runtime will prefer the VTID if present
@@ -1607,7 +1608,7 @@ public interface PartInfrastructureSettingAtt extends SettingController {
    * <p>
    * Setter method for the COM property "NamingMode"
    * </p>
-   * @param oNamingMode Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatPartElementsNamingMode parameter.
+   * @param oNamingMode Mandatory CatPartElementsNamingMode parameter.
    */
 
   @DISPID(1611006084) //= 0x60060084. The runtime will prefer the VTID if present

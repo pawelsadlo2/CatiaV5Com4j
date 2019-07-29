@@ -1,6 +1,7 @@
 package CatiaV5TypeLibs.MecModTypeLib;
-import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 import CatiaV5TypeLibs.InfTypeLib.*;
+import CatiaV5TypeLibs.MecModTypeLib.*;
+import CatiaV5TypeLibs.KnowledgewareTypeLib.*;
 
 import com4j.*;
 
@@ -9,9 +10,9 @@ public interface Product extends AnyObject {
   // Methods:
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Products"
+   * Getter method for the COM property "Products"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Products
+   * @return  Returns a value of type Products
    */
 
   @DISPID(1610940416) //= 0x60050000. The runtime will prefer the VTID if present
@@ -21,9 +22,9 @@ public interface Product extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Publications"
+   * Getter method for the COM property "Publications"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Publications
+   * @return  Returns a value of type Publications
    */
 
   @DISPID(1610940417) //= 0x60050001. The runtime will prefer the VTID if present
@@ -34,7 +35,7 @@ public interface Product extends AnyObject {
   /**
    * @param iShapePathName Mandatory Holder<java.lang.String> parameter.
    * @param iShapeName Mandatory Holder<java.lang.String> parameter.
-   * @param iRepBehavior Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatRepType parameter.
+   * @param iRepBehavior Mandatory CatRepType parameter.
    * @param iContext Mandatory boolean parameter.
    */
 
@@ -49,7 +50,7 @@ public interface Product extends AnyObject {
 
   /**
    * @param iShapeName Mandatory Holder<java.lang.String> parameter.
-   * @param iRepBehavior Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatRepType parameter.
+   * @param iRepBehavior Mandatory CatRepType parameter.
    * @param iContext Mandatory boolean parameter.
    */
 
@@ -63,7 +64,7 @@ public interface Product extends AnyObject {
 
   /**
    * @param iShapeName Mandatory Holder<java.lang.String> parameter.
-   * @param iRepBehavior Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatRepType parameter.
+   * @param iRepBehavior Mandatory CatRepType parameter.
    * @param iContext Mandatory boolean parameter.
    * @return  Returns a value of type boolean
    */
@@ -79,7 +80,7 @@ public interface Product extends AnyObject {
   /**
    * @param iLoadIfNecessary Mandatory boolean parameter.
    * @param iShapeName Mandatory Holder<java.lang.String> parameter.
-   * @param iRepBehavior Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatRepType parameter.
+   * @param iRepBehavior Mandatory CatRepType parameter.
    * @param iContext Mandatory boolean parameter.
    * @return  Returns a value of type CATBaseDispatch
    */
@@ -244,7 +245,7 @@ public interface Product extends AnyObject {
    * <p>
    * Getter method for the COM property "Source"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.CatProductSource
+   * @return  Returns a value of type CatProductSource
    */
 
   @DISPID(1610940435) //= 0x60050013. The runtime will prefer the VTID if present
@@ -256,7 +257,7 @@ public interface Product extends AnyObject {
    * <p>
    * Setter method for the COM property "Source"
    * </p>
-   * @param oSource Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatProductSource parameter.
+   * @param oSource Mandatory CatProductSource parameter.
    */
 
   @DISPID(1610940435) //= 0x60050013. The runtime will prefer the VTID if present
@@ -352,9 +353,9 @@ public interface Product extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Analyze"
+   * Getter method for the COM property "Analyze"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Analyze
+   * @return  Returns a value of type Analyze
    */
 
   @DISPID(1610940444) //= 0x6005001c. The runtime will prefer the VTID if present
@@ -363,7 +364,7 @@ public interface Product extends AnyObject {
 
 
   /**
-   * @param iFileType Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatFileType parameter.
+   * @param iFileType Mandatory CatFileType parameter.
    * @param iFile Mandatory Holder<java.lang.String> parameter.
    */
 
@@ -386,7 +387,7 @@ public interface Product extends AnyObject {
    * <p>
    * Getter method for the COM property "ReferenceProduct"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Product
+   * @return  Returns a value of type Product
    */
 
   @DISPID(1610940447) //= 0x6005001f. The runtime will prefer the VTID if present
@@ -396,9 +397,9 @@ public interface Product extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Parameters"
+   * Getter method for the COM property "Parameters"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Parameters
+   * @return  Returns a value of type Parameters
    */
 
   @DISPID(1610940448) //= 0x60050020. The runtime will prefer the VTID if present
@@ -410,7 +411,7 @@ public interface Product extends AnyObject {
    * <p>
    * Getter method for the COM property "UserRefProperties"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Parameters
+   * @return  Returns a value of type Parameters
    */
 
   @DISPID(1610940449) //= 0x60050021. The runtime will prefer the VTID if present
@@ -420,9 +421,9 @@ public interface Product extends AnyObject {
 
   /**
    * <p>
-   * Getter method for the COM property "CatiaV5TypeLibs.PartItfTypeLib.Relations"
+   * Getter method for the COM property "Relations"
    * </p>
-   * @return  Returns a value of type CatiaV5TypeLibs.PartItfTypeLib.Relations
+   * @return  Returns a value of type Relations
    */
 
   @DISPID(1610940450) //= 0x60050022. The runtime will prefer the VTID if present
@@ -442,7 +443,7 @@ public interface Product extends AnyObject {
 
 
   /**
-   * @param newMode Mandatory CatiaV5TypeLibs.PartItfTypeLib.CatWorkModeType parameter.
+   * @param newMode Mandatory CatWorkModeType parameter.
    */
 
   @DISPID(1610940452) //= 0x60050024. The runtime will prefer the VTID if present
