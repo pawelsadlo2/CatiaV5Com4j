@@ -1,3 +1,10 @@
+
+
+val ROT = com4jExtensions.helpers.catiaApps
+
+
+
+/*
 import CatiaV5TypeLibs.InfTypeLib._
 import CatiaV5TypeLibs.MecModTypeLib._
 //import CatiaV5TypeLibs.KnowledgewareTypeLib._
@@ -31,3 +38,4 @@ methods(selection.head)
 import java.lang.reflect.Method
 
 def methods[T](inObj:T): List[Method] = inObj.getClass.getMethods.toList
+*/

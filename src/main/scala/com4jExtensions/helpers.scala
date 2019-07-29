@@ -3,15 +3,19 @@ package com4jExtensions
 import java.lang.reflect.Method
 import java.util.NoSuchElementException
 
-import CatiaV5TypeLibs.InfTypeLib.{AnyObject, Application, ClassFactory, Reference}
-import com4j.{COM4J, Com4jObject, Holder}
+import CatiaV5TypeLibs.InfTypeLib.{AnyObject, Application, ClassFactory, Document, Reference}
+import com4j.{COM4J, Com4jObject, Holder, ROT}
 
 import scala.util.{Failure, Success, Try}
 import com4jExtensions._
 import org.reflections.Reflections
 
-import scala.reflect.runtime.universe._
+//import scala.reflect.runtime.universe._
 import org.reflections.ReflectionUtils._
+
+//import com4jExtensions.toScalaConverters
+
+import scala.sys._
 
 object helpers {
 
@@ -42,15 +46,15 @@ object helpers {
     getMethods(instanceClass).toArray(Array.empty: Array[Method]).toSet
   }
 
-  def getReferenceComMethods(obj: Any): Set[Method] = {
-    val methods = getComMethods(obj)
-    val referencesHoldersMethods = methods.filter(_.getParameterTypes.contains(classOf[Holder[Reference]]))
-    val referencesHoldersMethodsWithoutAnyObject = referencesHoldersMethods.filterNot(_.getDeclaringClass.getName.endsWith("AnyObject"))
-    val referencesMethods = methods.filter(_.getReturnType == classOf[Reference])
-    val z = referencesMethods.head.invoke(obj.asInstanceOf[Com4jObject].queryInterface(referencesMethods.head.getDeclaringClass))
-    referencesHoldersMethodsWithoutAnyObject ++ referencesMethods
+  /*  def getReferenceComMethods(obj: Any): Set[Method] = {
+      val methods = getComMethods(obj)
+      val referencesHoldersMethods = methods.filter(_.getParameterTypes.contains(classOf[Holder[Reference]]))
+      val referencesHoldersMethodsWithoutAnyObject = referencesHoldersMethods.filterNot(_.getDeclaringClass.getName.endsWith("AnyObject"))
+      val referencesMethods = methods.filter(_.getReturnType == classOf[Reference])
+      val z = referencesMethods.head.invoke(obj.asInstanceOf[Com4jObject].queryInterface(referencesMethods.head.getDeclaringClass))
+      referencesHoldersMethodsWithoutAnyObject ++ referencesMethods
 
-  }
+    }*/
 
 
   val catiaApp: Application = {
@@ -69,5 +73,22 @@ object helpers {
     }
   }
 
+  val catiaApps: List[Any] = {
+    val ROT: ROT = COM4J.getROT
+    val ROTList = ROT.toList
+    val filtered = ROTList.map(_.asInstanceOf[Com4jObject]).filter(_.is(classOf[Application]))
+    val app = filtered.head.queryInterface(classOf[Application]).
 
+
+    val threadNames = filtered.map(_.getComThread.getName)
+    //val tasks = ROTList.map(x=>COM4J.getObject())
+    val catias = ROTList.map(_.asInstanceOf[Com4jObject]).filter(_.is(classOf[Application])).map(_.queryInterface(classOf[Application]))
+    val names = catias.map(instance => (instance.documents.toList.map(_.asInstanceOf[Com4jObject].queryInterface(classOf[Document]).fullName()), instance))
+    val test = names.head == names(1)
+    //val catiaApps = ROTList.map(_.asInstanceOf[Application]).lift
+    ROTList
+    //val x = 1
+  }
+
+  implicit def toList(list: Any): List[Any] = new toScalaConverters(list).toList
 }

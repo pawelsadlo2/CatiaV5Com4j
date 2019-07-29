@@ -52,7 +52,6 @@ class toScalaConverters(inObj: Any) {
 
 }
 
-
 /*
 class asList[T <: Com4jObject](val inObj: T) {
 
