@@ -57,7 +57,7 @@ object helpers {
     }*/
 
 
-  val catiaApp: Application = {
+  def catiaApp: Application = {
 
     val catiaAppTry = Try(COM4J.getActiveObject(
       classOf[Application],
@@ -74,20 +74,33 @@ object helpers {
   }
 
   val catiaApps: List[Any] = {
+    COM4J.
     val ROT: ROT = COM4J.getROT
     val ROTList = ROT.toList
     val filtered = ROTList.map(_.asInstanceOf[Com4jObject]).filter(_.is(classOf[Application]))
-    val app = filtered.head.queryInterface(classOf[Application]).
+    val headThread = filtered.head.getComThread
+    headThread.lifeComObjects
+    //headThread.kill()
+    val rot2 = COM4J.getROT.toList.map(_.asInstanceOf[Com4jObject]).filter(_.is(classOf[Application]))
+    //headThread.run()
+//    filtered.he
+//    val c1 =ca
+    val dount = catiaApp.documents.toList
+    val c2 = catiaApp
+    val x =1
+    //filtered.head.dispose()
+    //val app = filtered.head.queryInterface(classOf[Application])
 
 
-    val threadNames = filtered.map(_.getComThread.getName)
+    //val threadNames = filtered.map(_.getComThread.getName)
     //val tasks = ROTList.map(x=>COM4J.getObject())
-    val catias = ROTList.map(_.asInstanceOf[Com4jObject]).filter(_.is(classOf[Application])).map(_.queryInterface(classOf[Application]))
-    val names = catias.map(instance => (instance.documents.toList.map(_.asInstanceOf[Com4jObject].queryInterface(classOf[Document]).fullName()), instance))
-    val test = names.head == names(1)
-    //val catiaApps = ROTList.map(_.asInstanceOf[Application]).lift
-    ROTList
+//    val catias = ROTList.map(_.asInstanceOf[Com4jObject]).filter(_.is(classOf[Application])).map(_.queryInterface(classOf[Application]))
+//    val names = catias.map(instance => (instance.documents.toList.map(_.asInstanceOf[Com4jObject].queryInterface(classOf[Document]).fullName()), instance))
+//    val test = names.head == names(1)
+//    //val catiaApps = ROTList.map(_.asInstanceOf[Application]).lift
+//    ROTList
     //val x = 1
+
   }
 
   implicit def toList(list: Any): List[Any] = new toScalaConverters(list).toList
