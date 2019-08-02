@@ -1,11 +1,15 @@
 package com4jExtensions
 
-import CatiaV5TypeLibs.InfTypeLib.{Application, ClassFactory}
-import com4j.COM4J
-import com4jExtensions.implicitExtensions.iterableExtensions._
-
 import scala.util.{Failure, Success, Try}
 import scala.language.implicitConversions
+
+import CatiaV5TypeLibs.InfTypeLib.{Application, ClassFactory}
+import com4j.COM4J
+
+import com4jExtensions.implicitExtensions.iterableExtensions._
+import com4jExtensions.implicitExtensions.generalExtensions._
+import com4jExtensions.implicitExtensions.generalExtensions.queryImplicitFunctions._
+import com4jExtensions.implicitExtensions.generalExtensions.collectionsImplicitConversions._
 
 object helpers {
 
@@ -16,7 +20,9 @@ object helpers {
       "{87fd6f40-e252-11d5-8040-0010b5fa1031}"))
 
     catiaAppTry match {
-      case Success(value) => value
+      case Success(value) =>
+        if (catiaApps.size == 1) value
+        else throw new Exception("Found more than one Catia instances, cant decide which one to connect to")
       case Failure(_) => {
         val catia = ClassFactory.createApplication()
         catia.visible(true)
@@ -25,7 +31,7 @@ object helpers {
     }
   }
 
-  def catiaApps = COM4J.getROT.filter(_.is(classOf[Application])).toList
+  def catiaApps: Iterable[Application] = COM4J.getROT.filter(_.is(classOf[Application])).map(_.identity)
 
 }
 

@@ -1,4 +1,4 @@
-import com.sun.java.accessibility.AccessBridge
+import com.sun.java.accessibility.internal.AccessBridge
 import com.sun.jna._
 import com.sun.jna.ptr._
 import javax.accessibility.AccessibleContext

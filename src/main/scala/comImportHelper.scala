@@ -2,7 +2,7 @@ import java.io.File
 
 import CatiaV5TypeLibs.InfTypeLib.Files
 
-import java.io.{File, FileInputStream, FileWriter, PrintWriter}
+import java.io.{File, FileWriter, PrintWriter}
 
 import scala.collection.immutable.Map.Map1
 import scala.io.Source
@@ -16,7 +16,7 @@ import scala.io.Source
 
 //line.replace("s","a")
 
-//Source.fromInputStream(new FileInputStream(file))).toList
+//Source.fromInputLazyList(new FileInputLazyList(file))).toList
 
 //filteredFiles.length
 //filteredFiles.head.getLines().toList
@@ -24,30 +24,30 @@ import scala.io.Source
 
 //val x = d.listFiles().toList.take(3)
 //val t = Source.fromFile(x(1))
-//val file = new FileInputStream(x(1))
-//val fileInputStream = Source.fromInputStream(file)
+//val file = new FileInputLazyList(x(1))
+//val fileInputLazyList = Source.fromInputLazyList(file)
 
-//fileInputStream.getLines().map{
+//fileInputLazyList.getLines().map{
 //  x=>
 //    x.replace("package", "aaa")
 //
 //}.toList
-//fileInputStream.close()
+//fileInputLazyList.close()
 //new File(PATH + "/PartItfTypeLib"+"/aaaaa.txt")
 //val writer = new FileWriter(new File(PATH + "/PartItfTypeLib" + "/aaaaa.txt"))
 
-//fileInputStream.getLines().toList
+//fileInputLazyList.getLines().toList
 ///writer.write("aa")
 //writer.close
 //writer.write("a")
 //.close()
-//val ans = for (line <- fileInputStream.getLines)
+//val ans = for (line <- fileInputLazyList.getLines)
 //  yield (line.replace("package", "aaa"))
 
 
 //.toList(1).replace("package","aaa")
 //val line = t.getLines().toList(1).replace("package","aaa")
-//Source.fromInputStream(getClass.getResourceAsStream(x(1)))
+//Source.fromInputLazyList(getClass.getResourceAsLazyList(x(1)))
 
 //if (d.exists && d.isDirectory) {
 //  d.listFiles.filter(_.isFile).toList
@@ -69,7 +69,7 @@ object comImportHelper {
   def insertImports: Unit = {
 
     def lastContainingLineIndex(file: File, string: String) = {
-      val lines: Stream[String] = Source.fromFile(file).getLines().toStream
+      val lines: LazyList[String] = Source.fromFile(file).getLines().to(LazyList)
       lines.lastIndexWhere(_.contains(string))
     }
 
@@ -94,13 +94,13 @@ object comImportHelper {
     }
 
 
-    val operation: Unit = inserted.map({ case (file, lines) => {
-      val writer = new FileWriter(file)
+/*    val operation: Unit = inserted.map({ case (file, lines) => {
+      val writer = new FileWriter(File)
       val newContent = lines.map(x => x + "\n").flatten.toArray
       writer.write(newContent)
       writer.close
     }
-    })
+    })*/
   }
 
   def filesIntersection(file1: File, file2: File): List[File] = {

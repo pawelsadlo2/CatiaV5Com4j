@@ -1,11 +1,11 @@
 package com4jExtensions.implicitExtensions
 
-import CatiaV5TypeLibs.InfTypeLib.Document
+import CatiaV5TypeLibs.InfTypeLib.{Application, Document}
 import CatiaV5TypeLibs.PartTypeLib.{Body, Part, PartDocument, ProductDocument}
 import com4j.Com4jObject
 
 import scala.language.implicitConversions
-import scala.util.Try
+
 
 object generalExtensions {
 
@@ -30,6 +30,8 @@ object generalExtensions {
     implicit def queryPartDocument[T <: Com4jObject](x: T): PartDocument = queryMatching(classOf[PartDocument])(x)
 
     implicit def queryProductDocument[T <: Com4jObject](x: T): ProductDocument = queryMatching(classOf[ProductDocument])(x)
+
+    implicit def queryApplication[T <: Com4jObject](x: T): Application = queryMatching(classOf[Application])(x)
   }
 
   object collectionsImplicitConversions {

@@ -20,9 +20,9 @@ object IIDsFileUpdate {
     )
   }
 
-  def readFileContents(file: File): Stream[String] = {
+  def readFileContents(file: File): LazyList[String] = {
     val fileSource = Source.fromFile(file)
-    fileSource.getLines().toStream
+    fileSource.getLines().to(LazyList)
 
   }
 
