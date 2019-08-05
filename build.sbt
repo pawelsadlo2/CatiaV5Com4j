@@ -4,14 +4,15 @@ version := "0.1"
 
 scalaVersion := "2.13.0"
 
+
 // https://mvnrepository.com/artifact/org.jvnet.com4j/com4j
 libraryDependencies ++= Seq(
-  "org.jvnet.com4j" % "com4j" % "2.1",
-  "org.reflections" % "reflections" % "0.9.11",
+  "org.jvnet.com4j" % "com4j" % "latest.integration",
+  "org.reflections" % "reflections" % "latest.integration",
   // https://mvnrepository.com/artifact/net.java.dev.jna/jna
-  "net.java.dev.jna" % "jna" % "5.4.0",
+  "net.java.dev.jna" % "jna" % "latest.integration",
   // https://mvnrepository.com/artifact/org.scala-lang/scala-reflect
-  "org.scala-lang" % "scala-reflect" % "2.13.0"
+  "org.scala-lang" % "scala-reflect" % "latest.integration"
 
 )
 

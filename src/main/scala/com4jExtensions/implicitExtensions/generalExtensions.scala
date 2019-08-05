@@ -2,9 +2,10 @@ package com4jExtensions.implicitExtensions
 
 import CatiaV5TypeLibs.InfTypeLib.{Application, Document}
 import CatiaV5TypeLibs.PartTypeLib.{Body, Part, PartDocument, ProductDocument}
-import com4j.Com4jObject
+import com4j.{Com4jObject, Holder}
 
 import scala.language.implicitConversions
+import scala.reflect.ClassTag
 
 
 object generalExtensions {
@@ -16,12 +17,17 @@ object generalExtensions {
     def identity: T = obj
   }
 
+  object argumentsImplicits {
+    implicit def elemToHolder[T](elem: T): Holder[T] = new Holder(elem)
+  }
+
   object queryImplicitFunctions {
 
-    private def queryMatching[U <: Com4jObject, V <: Com4jObject](cls: Class[V])(implicit el: U): V = el match {
+    private def queryMatching[IN <: Com4jObject, OUT <: Com4jObject](cls: Class[OUT])(implicit el: IN): OUT = el match {
       case ok if ok.is(cls) => ok.queryInterface(cls)
       case _ => throw new ClassCastException("another data type is being casted to " + cls.getSimpleName + " try filtering parent collection first")
     }
+
 
     implicit def queryBody[T <: Com4jObject](x: T): Body = queryMatching(classOf[Body])(x)
 
