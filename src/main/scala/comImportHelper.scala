@@ -69,7 +69,7 @@ object comImportHelper {
   def insertImports: Unit = {
 
     def lastContainingLineIndex(file: File, string: String) = {
-      val lines: LazyList[String] = Source.fromFile(file).getLines().to(LazyList)
+      val lines: Stream[String] = Source.fromFile(file).getLines().toStream
       lines.lastIndexWhere(_.contains(string))
     }
 

@@ -15,7 +15,7 @@ object helpers {
 
   def getOrCreateCatia: Application = {
 
-    val catiaAppTry = Try(COM4J.getActiveObject(
+    def catiaAppTry = Try(COM4J.getActiveObject(
       classOf[Application],
       "{87fd6f40-e252-11d5-8040-0010b5fa1031}"))
 
@@ -31,7 +31,7 @@ object helpers {
     }
   }
 
-  def catiaApps: Iterable[Application] = COM4J.getROT.filter(_.is(classOf[Application])).map(_.identity)
+  def catiaApps:Iterable[Application] = COM4J.getROT.filter(_.is(classOf[Application])).map(_.identity: Application)
 
 }
 

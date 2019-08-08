@@ -10,7 +10,7 @@ import scala.reflect.ClassTag
 
 object generalExtensions {
 
-  implicit class general[T <: Com4jObject](obj: T) {
+  implicit class General[T <: Com4jObject](obj: T) {
 
     def I[B <: Com4jObject](comInterface: Class[B]): B = obj.queryInterface(comInterface): B
 
@@ -35,9 +35,12 @@ object generalExtensions {
 
     implicit def queryPartDocument[T <: Com4jObject](x: T): PartDocument = queryMatching(classOf[PartDocument])(x)
 
+    //implicit def queryDocument[T <: Com4jObject](x: T): Document = queryMatching(classOf[Document])(x)
+
     implicit def queryProductDocument[T <: Com4jObject](x: T): ProductDocument = queryMatching(classOf[ProductDocument])(x)
 
     implicit def queryApplication[T <: Com4jObject](x: T): Application = queryMatching(classOf[Application])(x)
+
   }
 
   object collectionsImplicitConversions {

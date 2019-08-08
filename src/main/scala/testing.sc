@@ -1,14 +1,6 @@
-var t=0
 
-def threeTimes(f: => Int=>Int) = 1 to 3 foreach {x => t=f(x)}
 
-def foo = threeTimes ( x=>x*2 )
-
-foo
-
-t
-
-//val ROT = com4jExtensions.helpers.catiaApps
+val ROT = com4jExtensions.helpers.catiaApps
 
 
 
