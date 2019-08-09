@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
   //"org.reflections" % "reflections" % "latest.integration",
   // https://mvnrepository.com/artifact/net.java.dev.jna/jna
   "net.java.dev.jna" % "jna" % "latest.integration",
+  "net.java.dev.jna" % "jna-platform" % "latest.integration",
   // https://mvnrepository.com/artifact/org.scala-lang/scala-reflect
   //"org.scala-lang" %% "scala-reflect" % "latest.integration",
   //test

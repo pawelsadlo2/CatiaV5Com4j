@@ -20,9 +20,12 @@ object ConsumeEvent {
   }
 }
 
+
+
 class ConsumeEvent @throws[NativeHookException]
   extends NativeKeyListener { // Create custom logger and level.
   val logger: Logger = Logger.getLogger(classOf[GlobalScreen].getPackage.getName)
+  //Logger.getLogger()
   logger.setLevel(Level.WARNING)
   GlobalScreen.setEventDispatcher(new VoidDispatchService)
   GlobalScreen.registerNativeHook()
