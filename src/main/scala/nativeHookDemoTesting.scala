@@ -11,14 +11,16 @@ import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 import com.sun.jna.Native
 import com.sun.jna.Pointer
-import com.sun.jna.platform.win32.Guid.GUID
+import com.sun.jna.platform.win32.COM.Unknown
+import com.sun.jna.platform.win32.Guid.{GUID, REFIID}
 import com.sun.jna.platform.win32.WinDef.DWORD
 import com.sun.jna.platform.win32.WinNT.HRESULT
 import com.sun.jna.ptr.LongByReference
 import com.sun.jna.ptr.PointerByReference
 import com.sun.jna.win32.StdCallLibrary
 import com.sun.jna.win32.W32APIOptions
-
+import com.sun.jna.ptr.PointerByReference
+import com4j.{COM4J, Wrapper}
 
 object Oleacc extends {
   self: Oleacc =>
@@ -68,11 +70,32 @@ object nativeHookDemoTesting {
     //val arr: Array[Char] = Array.ofDim(255)
     //    User32Lib.GetWindowText(windows.head, arr, 255)
 
-    val texts = windows.withFilter(getWindowText(_).contains("CATIA V5:Administration")).map(hWnd => (hWnd, getWindowText(hWnd)))
+    def texts = windows.withFilter(getWindowText(_).contains("CATIA V5 : Administration")).map(hWnd => (hWnd, getWindowText(hWnd)))
 
     val IID_IAccessible: Guid.IID = new Guid.IID("{618736E0-3C3D-11CF-810C-00AA00389B71}")
 
-    val accessible = Oleacc.INSTANCE.AccessibleObjectFromWindow(texts.head, 0, IID_IAccessible, ptr)
+    var ptr = new PointerByReference
+    val accessible = Oleacc.INSTANCE.AccessibleObjectFromWindow(texts.head._1, 0, IID_IAccessible, ptr)
+
+    def x = ptr.getValue
+
+    import CatiaV5TypeLibs.InfTypeLib.Application
+    val nn = new Unknown(x)
+    var ptr1 = new PointerByReference
+
+    def dispatch = new REFIID(new Guid.IID("{00020400-0000-0000-C000-000000000046}"))
+
+    val nnn = nn.QueryInterface(dispatch, ptr1)
+
+
+    COM4J.
+
+    //nn.
+
+
+    /*   val comObj = COM4J.wrap(classOf[Application],x)
+        val yy =comObj.statusBar()*/
+
     //val catiaMatching = texts.filter(_.contains("CATIA"))
     //println(arr.mkString(""))
 

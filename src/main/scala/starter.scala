@@ -23,7 +23,7 @@ object starter {
     val catia = getOrCreateCatia
     //catia.documents().add("Part")
     val partDocs = catia.documents().map(_.identity: PartDocument)
-COM4J.wrap(classOf[])
+//COM4J.wrap(classOf[])
 
     val x = 2
     /*    val productDocs = catia.documents().map(x => Try(x.identity[PartDocument]))
